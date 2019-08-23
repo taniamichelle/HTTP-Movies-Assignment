@@ -57,7 +57,7 @@ export default class Movie extends React.Component {
         </div>
         <div className='edit-wrapper'>
           {/* 'Link' is like a button and 'to' sends you to a different url: update-movie/(id from url)*/}
-          <Link to='/update-movie/:id'>Update</Link>
+          <Link to={`/update-movie/${this.state.movie.id}`}>Update Movie</Link>
           {/* <button className='edit-btn' onClick={() => this.props.history.push(`/update-movie:id`)}>Edit</button> */}
         </div>
         <div className='delete-wrapper'>
